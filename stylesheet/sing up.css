@@ -1,0 +1,169 @@
+body {
+    background-image: url('https://images.unsplash.com/photo-1612838320303-4b3b3b3b3b3b');  
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  }
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #333;
+    text-align: center;
+    width: 400px;
+}
+
+.login-container h1 {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+label {
+    font-weight: bold;
+    width: 115px;
+    text-align: left;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 7px;
+    font-size: 14px;
+    outline: none;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 2px solid black;
+    margin: 0 10px;
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.checkbox-container input {
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    background: black;
+    color: white;
+}
+
+.signup-section {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.signup-btn {
+    padding: 07px 10px;
+    font-size: 14px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: bold;
+    background: white;
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    background: black;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .card {
+      padding: 20px;
+      align-items: flex-start;
+    }
+  
+    .login-container {
+      width: 100%;
+      max-width: 100%;
+      padding: 15px;
+      border-radius: 8px;
+    }
+  
+    .login-container h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    .form-group {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    label {
+      width: 100%;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+  
+    input {
+      width: 95%;
+      margin: 0 0 15px 0;
+      font-size: 14px;
+    }
+  
+    .btn {
+      padding: 10px;
+      font-size: 15px;
+    }
+  
+    .signup-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .signup-btn {
+      width: 100%;
+      padding: 10px;
+    }
+  }

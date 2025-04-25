@@ -1,0 +1,179 @@
+.main-container {
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+.sub-container {
+    background-color: #333;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #333;
+    text-align: center;
+}
+
+.heading{
+    margin-top: -20px;
+}
+  
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+label {
+    font-weight: bold;
+    width: 125px;
+    text-align: left;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 7px;
+    font-size: 14px;
+    outline: none;
+}
+
+.submit-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: black;
+    color: white;
+} 
+
+.product-name {
+    font-weight: bold;
+    text-align: left;
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+.product-price {
+    color: #ffffff;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.product-quantity {
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.cart{
+    text-align: center;
+}
+
+.cart-table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 4px;
+    margin-bottom:2.5%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.cart-table th, .cart-table td {
+    border: 1px solid #ffffff;
+    padding: 8px;
+    text-align: center;
+}
+
+.cart-table th {
+    background-color: black;
+    color: white;
+}
+.cart-body{
+    color:#000000;
+}
+
+.cart-buttons{
+    margin-bottom:60px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .sub-container {
+      padding: 15px;
+    }
+  
+    .heading h1 {
+      font-size: 20px;
+    }
+  
+    .cart-table {
+      width: 100%;
+      margin: 10px 0;
+      font-size: 13px;
+    }
+  
+    .cart-table th, .cart-table td {
+      padding: 6px;
+    }
+  
+    .form-group {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    label {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+  
+    input {
+      width: 95%;
+      margin: 0 0 10px 0;
+    }
+  
+    .submit-btn {
+      padding: 10px 25px;
+      font-size: 14px;
+    }
+  
+    #thankYouMessage {
+      text-align: center;
+      padding: 10px;
+    }
+  
+    #thankYouMessage h2 {
+      font-size: 18px;
+    }
+  
+    #thankYouMessage p {
+      font-size: 14px;
+    }
+  }

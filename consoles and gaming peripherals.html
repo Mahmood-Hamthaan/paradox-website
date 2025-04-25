@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Computer Components
+    </title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheet/header & footer.css">
+    <link rel="stylesheet" href="stylesheet/consoles and gaming peripherals.css">
+    <script src="scriptsheet/consoles and gaming peripherals.js"></script>
+    <script src="scriptsheet/Hamburger.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="name">
+            <a href="index.html"><img src="images/logo.png" alt="logo" class="logo-image"></a>
+            <div class="title">Paradox</div>
+            <a href="sign in.html" class="sign-in">Sign In</a>
+        </div>
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <!-- Navigation -->
+    <nav id="nav-menu" class="hidden">
+        <a href="index.html">Home</a>
+        <a href="about us.html">About Us</a>
+        <a href="upcoming games.html">Upcoming Games</a>
+        <a href="consoles and gaming peripherals.html">Computer Components</a>
+        <a href="games.html">Games</a>
+        <a href="faq.html">FAQ</a>
+    </nav>
+    </header>
+
+<main>
+    <div class="main-container">
+        <section class="sub-container">
+        <!--6 Processors-->
+            <div class="heading">
+                <h1>Processors</h1>
+            </div>
+            <div class="product-grid" id="processors">
+                <div class="product-card">
+                    <img src="images/i9.jpeg" alt="Core i9">
+                    <div class="product-name">Intel Core i9 14900K</div>
+                    <div class="product-price">Price: $590</div>
+                    <input type="number" class="product-quantity" value="0" min="0" name="Intel Core i9 14900K" data-price="590">
+                    <button class="add-to-cart" type="button" onclick="movecart()">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/i7.jpeg" alt="Core i7">
+                    <div class="product-name">Intel Core i7 14700K</div>
+                    <div class="product-price">Price: $410</div>
+                    <input type="number" class="product-quantity" value="0" min="0" name="Intel Core i7 14700K" data-price="410">
+                    <button class="add-to-cart" type="button" onclick="movecart()">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/Ryzen 9.webp" alt="Ryzen 9">
+                    <div class="product-name">AMD Ryzen 9 9950X</div>
+                    <div class="product-price">Price: $700</div>
+                    <input type="number" class="product-quantity" value="0" min="0" name="AMD Ryzen 9 9950X" data-price="700">
+                    <button class="add-to-cart" type="button" onclick="movecart()">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/Ryzen 7.webp" alt="Ryzen 7">
+                    <div class="product-name">AMD Ryzen 7 9700X</div>
+                    <div class="product-price">Price: $400</div>
+                    <input type="number" class="product-quantity" value="0" min="0" name="AMD Ryzen 7 9700X" data-price="400">
+                    <button class="add-to-cart" type="button" onclick="movecart()">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/Ryzen 5.webp" alt="Ryzen 5">
+                    <div class="product-name">AMD Ryzen 5 9600X</div>
+                    <div class="product-price">Price: $300</div>
+                    <input type="number" class="product-quantity" value="0" min="0" name="AMD Ryzen 5 9600X" data-price="300">
+                    <button class="add-to-cart" type="button" onclick="movecart()">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/i5.jpeg" alt="Intel Core i5">
+                    <div class="product-name">Intel Core i5 14600K</div>
+                    <div class="product-price">Price: $320</div>
+                    <input type="number" class="product-quantity" value="0" min="0" name="Intel Core i5 14600K" data-price="320">
+                    <button class="add-to-cart" type="button" onclick="movecart()">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!--6 Graphic Cards-->
+        <section class="sub-container">
+            <div class="heading">
+                <h1>Graphic Cards</h1>
+            </div>
+            <div class="product-grid" id="processors">
+                <div class="product-card">
+                    <img src="images/rtx_5090.jpg" alt="RTX 5090">
+                    <div class="product-name">NVIDIA GeForce RTX 5090</div>
+                    <div class="product-price">Price: $2,000</div>
+                    <input type="number" class="product-quantity" value="0" min="0" name="NVIDIA GeForce RTX 5090" data-price="2000">
+                    <button class="add-to-cart" type="button" onclick="movecart()">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/rtx_5080.jpg" alt="RTX 5080">
+                    <div class="product-name">NVIDIA GeForce RTX 5080</div>
+                    <div class="product-price">Price: $1,000</div>
+                    <input type="number" class="product-quantity" value="0" min="0" name="NVIDIA GeForce RTX 5080" data-price="1000">
+                    <button class="add-to-cart" type="button" onclick="movecart()">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/rtx_5070.jpg" alt="RTX 5070 Ti">
+                    <div class="product-name">NVIDIA GeForce RTX 5070 Ti</div>
+                    <div class="product-price">Price: $750</div>
+                    <input type="number" class="product-quantity" value="0" min="0" name="NVIDIA GeForce RTX 5070 Ti" data-price="750">
+                    <button class="add-to-cart" type="button" onclick="movecart()">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/rtx_4060.webp" alt="RX 4060">
+                    <div class="product-name">NVIDIA GeForce RTX 4060</div>
+                    <div class="product-price">Price: $700</div>
+                    <input type="number" class="product-quantity" value="0" min="0" name="NVIDIA GeForce RTX 4060" data-price="700">
+                    <button class="add-to-cart" type="button" onclick="movecart()">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/rtx_5060.jpg" alt="RTX 5060">
+                    <div class="product-name">NVIDIA GeForce RTX 5060</div>
+                    <div class="product-price">Price: $550</div>
+                    <input type="number" class="product-quantity" value="0" min="0" name="NVIDIA GeForce RTX 5060" data-price="550">
+                    <button class="add-to-cart" type="button" onclick="movecart()">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/rtx_4090.webp" alt="RTX 4090 Ti">
+                    <div class="product-name">NVIDIA GeForce RTX 4090</div>
+                    <div class="product-price">Price: $430</div>
+                    <input type="number" class="product-quantity" value="0" min="0" name="NVIDIA GeForce RTX 4090" data-price="430">
+                    <button class="add-to-cart" type="button" onclick="movecart()">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        
+        <!--6 Motherboards-->
+        <section class="sub-container">
+            <div class="heading">
+                <h1>Motherboards</h1>
+            </div>
+            <div class="product-grid" id="processors">
+                <div class="product-card">
+                    <img src="images/asus-rog-strix-b650.png" alt="ASUS ROG STRIX B650">
+                    <div class="product-name">ASUS ROG STRIX B650-A Gaming WiFi</div>
+                    <div class="product-price">Price: $210</div>
+                    <input type="number" class="product-quantity" value="0" min="0" name="ASUS ROG STRIX B650-A Gaming WiFi" data-price="210">
+                    <button class="add-to-cart" type="button" onclick="movecart()">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/msi-mag-z790.webp" alt="MSI MAG Z790">
+                    <div class="product-name">MSI MAG Z790 TOMAHAWK WiFi</div>
+                    <div class="product-price">Price: $260</div>
+                    <input type="number" class="product-quantity" value="0" min="0" name="MSI MAG Z790 TOMAHAWK WiFi" data-price="260">
+                    <button class="add-to-cart" type="button" onclick="movecart()">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/gigabyte-x670e.jpeg" alt="Gigabyte X670E">
+                    <div class="product-name">Gigabyte X670E AORUS Master</div>
+                    <div class="product-price">Price: $350</div>
+                    <input type="number" class="product-quantity" value="0" min="0" name="Gigabyte X670E AORUS Master" data-price="350">
+                    <button class="add-to-cart" type="button" onclick="movecart()">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/asrock-b760m.webp" alt="ASRock B760M">
+                    <div class="product-name">ASRock B760M Steel Legend</div>
+                    <div class="product-price">Price: $190</div>
+                    <input type="number" class="product-quantity" value="0" min="0" name="ASRock B760M Steel Legend" data-price="190">
+                    <button class="add-to-cart" type="button" onclick="movecart()">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/asus-tuf-gaming-x670e.jpg" alt="ASUS TUF Gaming X670E">
+                    <div class="product-name">ASUS TUF Gaming X670E-PLUS WiFi</div>
+                    <div class="product-price">Price: $300</div>
+                    <input type="number" class="product-quantity" value="0" min="0" name="ASUS TUF Gaming X670E-PLUS WiFi" data-price="300">
+                    <button class="add-to-cart" type="button" onclick="movecart()">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/msi-pro-z790-a.jpg" alt="MSI PRO Z790">
+                    <div class="product-name">MSI PRO Z790-A WiFi</div>
+                    <div class="product-price">Price: $230</div>
+                    <input type="number" class="product-quantity" value="0" min="0" name="MSI PRO Z790-A WiFi" data-price="230">
+                    <button class="add-to-cart" type="button" onclick="movecart()">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!--4 RAM-->
+        <section class="sub-container">
+            <div class="heading">
+                <h1>RAM</h1>
+            </div>
+            <div class="product-grid" id="processors">
+                <div class="product-card">
+                    <img src="images/corsair-vengeance-ddr5.webp" alt="Corsair Vengeance">
+                    <div class="product-name">Corsair Vengeance DDR5 32GB (2x16GB) 6000MHz</div>
+                    <div class="product-price">Price: $160</div>
+                    <input type="number" class="product-quantity" value="0" min="0" name="Corsair Vengeance DDR5 32GB (2x16GB) 6000MHz" data-price="160">
+                    <button class="add-to-cart" type="button" onclick="movecart()">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/g.skill-trident-z5-rgb-ddr5.webp" alt="G.Skill Trident Z5">
+                    <div class="product-name">G.Skill Trident Z5 RGB DDR5 32GB (2x16GB) 6400MHz</div>
+                    <div class="product-price">Price: $190</div>
+                    <input type="number" class="product-quantity" value="0" min="0" name="G.Skill Trident Z5 RGB DDR5 32GB (2x16GB) 6400MHz" data-price="190">
+                    <button class="add-to-cart" type="button" onclick="movecart()">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/kingston-fury-beast-ddr5.jpg" alt="Kingston Fury Beast">
+                    <div class="product-name">Kingston Fury Beast DDR5 32GB (2x16GB) 5600MHz</div>
+                    <div class="product-price">Price: $150</div>
+                    <input type="number" class="product-quantity" value="0" min="0" name="Kingston Fury Beast DDR5 32GB (2x16GB) 5600MHz" data-price="150">
+                    <button class="add-to-cart" type="button" onclick="movecart()">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/teamgroup-ddr5.jpg" alt="TEAMGROUP T-Force Delta">
+                    <div class="product-name">TEAMGROUP T-Force Delta RGB DDR5 32GB (2x16GB) 7200MHz</div>
+                    <div class="product-price">Price: $210</div>
+                    <input type="number" class="product-quantity" value="0" min="0" name="TEAMGROUP T-Force Delta RGB DDR5 32GB (2x16GB) 7200MHz" data-price="210">
+                    <button class="add-to-cart" type="button" onclick="movecart()">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!--6 Storage Devices-->
+        <section class="sub-container">
+            <div class="heading">
+                <h1>Storage Device</h1>
+            </div>
+            <div class="product-grid" id="processors">
+                <div class="product-card">
+                    <img src="images/samsung-990-evo-plus-nvme.jpg" alt="Samsung 990 PRO">
+                    <div class="product-name">Samsung 990 PRO 2TB NVMe Gen4 SSD</div>
+                    <div class="product-price">Price: $160</div>
+                    <input type="number" class="product-quantity" value="0" min="0" name="Samsung 990 PRO 2TB NVMe Gen4 SSD" data-price="160">
+                    <button class="add-to-cart" type="button" onclick="movecart()">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/wd-black-sn850x.webp" alt="WD Black SN850X">
+                    <div class="product-name">WD Black SN850X 2TB NVMe Gen4 SSD</div>
+                    <div class="product-price">Price: $150</div>
+                    <input type="number" class="product-quantity" value="0" min="0" name="WD Black SN850X 2TB NVMe Gen4 SSD" data-price="150">
+                    <button class="add-to-cart" type="button" onclick="movecart()">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/seagate-firecuda-540.jpg" alt="Seagate FireCuda 540">
+                    <div class="product-name">Seagate FireCuda 540 2TB NVMe Gen5 SSD</div>
+                    <div class="product-price">Price: $260</div>
+                    <input type="number" class="product-quantity" value="0" min="0" name="Seagate FireCuda 540 2TB NVMe Gen5 SSD" data-price="260">
+                    <button class="add-to-cart" type="button" onclick="movecart()">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/crucial-t700.webp" alt="Crucial T700">
+                    <div class="product-name">Crucial T700 1TB NVMe Gen5 SSD</div>
+                    <div class="product-price">Price: $190</div>
+                    <input type="number" class="product-quantity" value="0" min="0" name="Crucial T700 1TB NVMe Gen5 SSD" data-price="190">
+                    <button class="add-to-cart" type="button" onclick="movecart()">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/sabrent-rocket-q4.jpg" alt="Sabrent Rocket Q4">
+                    <div class="product-name">Sabrent Rocket Q4 4TB NVMe Gen4 SSD</div>
+                    <div class="product-price">Price: $300</div>
+                    <input type="number" class="product-quantity" value="0" min="0" name="Sabrent Rocket Q4 4TB NVMe Gen4 SSD" data-price="300">
+                    <button class="add-to-cart" type="button" onclick="movecart()">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/samsung-t9-ssd.jpeg" alt="Samsung T9">
+                    <div class="product-name">Samsung T9 SSD 2TB</div>
+                    <div class="product-price">Price: $170</div>
+                    <input type="number" class="product-quantity" value="0" min="0" name="Samsung T9 SSD 2TB" data-price="170">
+                    <button class="add-to-cart" type="button" onclick="movecart()">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        <section class="sub-container">
+            <div class="heading">
+                <h1>Cart</h1>
+            </div>
+            <div class="cart">
+                <table class="cart-table" id="orderTable">
+                    <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                    </thead>
+                    <tbody></tbody>
+                    <tfoot>
+                    <tr>
+                        <td colspan="3"><strong>Total</strong></td>
+                        <td id="grandTotal">$0</td>
+                    </tr>
+                    </tfoot>
+                </table>
+                <div class="cart-buttons">
+                    <button class="favourite" type="button" onclick="saveToFavourites()">Add to Favourites</button>
+                    <button class="favourite" type="button" onclick="applyFavourites()">Apply Favourites</button>
+                    <button class="favourite" type="button" onclick="clearFavourites()">Clear Favourites</button>
+                    <button class="pay" id="pay-now" type="button" onclick="buyNow()">Buy Now</button>
+                </div>
+            </div>
+        </section>
+    </div> 
+</main>
+
+<footer>
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <img src="images/logo.png" alt="logo" class="logo-image">
+            <div class="lconnect">
+            <h2>Let's Connect</h2>
+            </div>
+            <p>"At Paradox, we bring stories to life and adventures to your screen. Play, explore, and conquer the gaming world with us!"</p>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <h2>Subscribe</h2>
+            <form>
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <input type="email" placeholder="Email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    <section class="footer-message">
+        <p> All Rights Reserved © 2024</p>
+    </div>
+</footer>
+</body>
+</html>

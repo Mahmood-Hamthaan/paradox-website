@@ -1,0 +1,218 @@
+.slogan-container {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+.slogan-image {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.slogan-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slogan-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-80%,-50%);
+    line-height: 35px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+.introduction {
+    width: 80%;
+    border: 1px solid #333;
+    background-color: #333;
+    border-radius: 10px;
+    margin: 0 10%;
+}
+.introduction h2 {
+    margin-bottom: 30px; 
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 05px; 
+    border: 1px solid #333;
+    background-color: black;
+    border-radius: 7px; 
+}
+.introduction p{
+    text-align: left;
+    font-size: 16px;
+    margin: 20px;
+    margin-top: -10px;
+}
+
+.top-games{
+    margin-left: 5%;
+    margin-right: 5%;
+}   
+.top-games h2,.testimonials h2{
+    padding: 10px;
+    background-color: #333;
+    color: #000;
+    border-radius: 7px;
+}
+.top-games h2{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+.top-games p{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+    font-size: 16px;
+}
+
+.top-games ol , .testimonials ul{
+    margin-top: -15px;
+    margin-left: 10%;
+    text-align: left;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin:0 auto;
+}
+  
+.game {
+    background:#333;
+    border: 1px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px black;
+}
+
+.game-image{
+    position: relative;
+    overflow: hidden;
+}
+
+.game-image img{
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    opacity: 0;
+}  
+
+.game-image:hover img {
+    filter: brightness(60%);
+}
+
+.game-image:hover .overlay-text {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.testimonials h2 {
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 25%;
+}
+.testimonials p{
+    margin: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+@media (max-width: 768px) {
+    .slogan-text {
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+        line-height: 24px;
+        padding: 8px;
+        width: 50%;
+    }
+
+    .introduction {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .introduction h2 {
+        font-size: 20px;
+        
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .introduction p {
+        font-size: 14px;
+    }
+
+    .top-games h2 {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+
+    .top-games p {
+        width: 90%;
+        margin: 0 auto 15px auto;
+        font-size: 14px;
+    }
+
+    .top-games ol {
+        margin-left: 8%;
+        font-size: 14px;
+    }
+
+    .game-container {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .game {
+        margin-bottom: 20px;
+    }
+
+    .overlay-text {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .testimonials h2 {
+        font-size: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .testimonials p,
+    .testimonials ul {
+        font-size: 14px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .testimonials ul li {
+        margin-bottom: 10px;
+    }
+}

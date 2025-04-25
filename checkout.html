@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Ckeckout
+    </title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheet/header & footer.css">
+    <link rel="stylesheet" href="stylesheet/checketout.css">
+    <script src="scriptsheet/checkout.js"></script>
+    <script src="scriptsheet/consoles and gaming peripherals.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="name">
+            <a href="index.html"><img src="images/logo.png" alt="logo" class="logo-image"></a>
+            <div class="title">Paradox</div>
+            <a href="sign in.html" class="sign-in">Sign In</a>
+        </div>
+    </header>
+
+<main>
+    <div class="main-container">
+        <div class="sub-container">
+            <div class="heading">
+                <h1>Cart</h1>
+            </div>
+            <div class="cart">
+                <table class="cart-table" id="orderTable">
+                    <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                    </thead>
+                    <tbody></tbody>
+                    <tfoot>
+                    <tr>
+                        <td colspan="3"><strong>Total</strong></td>
+                        <td id="grandTotal">$0</td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+        <div class="sub-container">
+            <form id="checkoutForm" onsubmit="event.preventDefault(); submitPayment();">
+                <h1>Personal Details</h1>
+                <div class="form-group">
+                    <label for="fullname">Full Name :</label>
+                    <input type="text" id="fullname" name="customer_fullname" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address :</label>
+                    <input type="text" id="address" name="customer_address" placeholder="Enter your address" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number :</label>
+                    <input type="tel" id="phone" name="customer_phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address :</label>
+                    <input type="email" id="email" name="customer_email" placeholder="Enter your email address" required>
+                </div>
+
+                <h1>Payment Detail</h1>
+                <div class="form-group">
+                    <label for="card-number">Card Number :</label>
+                    <input type="text" id="card-number" name="card_number" placeholder="Enter your card number" maxlength="16" required>
+                </div>
+                <div class="form-group">
+                    <label for="expiry-date">Expiry Date :</label>
+                    <input type="text" id="expiry-date" name="expiry_date" placeholder="MM/YY" required>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV :</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" maxlength="3" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="submit-btn" onclick="showDeliveryDate()">Pay</button>
+                </div>
+                </form>
+                <div id="thankYouMessage" class="hidden">
+                    <h2>Thank you for your purchase!</h2>
+                    <p>Your order will be delivered on <span id="deliveryDateOutput"></span>.</p>
+                </div>
+            </form>
+        </div>
+    </div> 
+</main>
+
+<footer>
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <img src="images/logo.png" alt="logo" class="logo-image">
+            <div class="lconnect">
+            <h2>Let's Connect</h2>
+            </div>
+            <p>"At Paradox, we bring stories to life and adventures to your screen. Play, explore, and conquer the gaming world with us!"</p>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <h2>Subscribe</h2>
+            <form>
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <input type="email" placeholder="Email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    <section class="footer-message">
+        <p> All Rights Reserved © 2024</p>
+    </div>
+</footer>
+</body>
+</html>
